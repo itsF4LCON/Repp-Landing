@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Repp — Track. Progress. Repeat.</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <img src="data:image/png;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAH0AfQDASIAAhEBAxEB/8QAHAABAAICAwEAAAAAAAAAAAAAAAYHBQgBAgQD/8QAPRABAAEDAgQEAwYEBAUFAAAAAAECAwQFEQYHITESQVFhEyJxFDJCYoGRI1JyoQgVscEkJUOCslNjwuHw/8QAGwEBAAIDAQEAAAAAAAAAAAAAAAUGAwQHAgH/xAA1EQEAAQMCBAIJAwQCAwAAAAAAAQIDBAURITFBUQYSEyJhcYGhwdHwkbHhFCNCUjJDJLLx/9oADAMBAAIRAxEAPwDTIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHa3RXcrpt26aq66p2pppjeZn0gHUezWNM1DSM+vA1PEu4mTRFNVVq5G1URMRMf2mHjfInfjD5TVFUbxyAH19AAAAAABOuWfLTWOM64yt/sOlU1eGvKrp3muY7xRHnPv2+s9GE474U1LhDXa9L1GmKomPHYvUfcvUeVUenvHkwU5Nqq5NqKo80dGpRn49d+cemuJrjjswADO2wAAAAAAAAAF6ci9T4T4kxauHde4c0KrU7FuIsXqsG3FWRbiNp3nbebkdZmY7x18pWLmcsOAsqmmm5w3i0bTvvarrtz+9NUdFE8n+ANd4k1Sxq1i/e0zT8W7EzmUzMVzVG3y2/WfftHv2bTR0iI6zt5yp2sXZsZH9m5PHnETPBy/xRkTiZn/AIt+YmecRM8J/Xr2V7d5NcBV3prjTci3E/gpy6/DHT3nd8b/ACV4FuW5ppxc2zO/3qMqrft+beFjufNGxqOVH/ZP6q/Gu6jH/fV+sqK5l8q+D+F+Cs/WbOVqUZNqmmnHpu36JiuuqqIiNvDEz3mfpCi14/4p9Z8V/SNAoqqjw01Zd2PKd/lo/wBK/wB1HLjpNV2vGiu7VvM/s6l4bryLmBTdyKpqqq48e3L+fiAJJPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJBwPwjrHF+q04Ol2J8ETHxsiuJ+HZp9ap/wBu8vNddNFM1VTtEMd27RZomu5O0R1YzRNL1DWtTs6bpeLcycq9V4aLdEf3n0iPOZ6Q2X5T8sMDhKzRqGoRazdZqiJ+L4flx+m000b+fWfm6bs5y84H0jgvTfgYNPxsu5H8fLrpjx3J9I9KfSn9/VKd1P1PWKr+9uzwp+c/w5fr/imvMmbGNwt9Z6z9o/JV7zr4Bji/RacvT7dEazh0zNmdoj41Hf4cz/ePf6tWq6aqK6qK6ZpqpnaYmNpiW889lEf4heX1VNy7xho9iqaap31CzRT93pEfFiI9fxfv6y2NE1Laf6e5PDpP0bvhDXfJMYV+eH+Mz+32UaAtTo4AAD36Do+p67qVvTtJwruXk19qLcb7R6zPaI956PkzERvLzVVTRE1VTtEPDTE1VRTTEzM9IiPNdvKvk1cvzZ1ji+3VbtdK7Wn77VVx0mJuTHaPy9/XbtMz5XcqNM4W+HqWqVW9R1faJiqad7WPP5InvV+af0287I3VbUtb33t48++fs55rvi6at7GFPDlNX2+/6OmNZs41i3j49q3as26Yot0UU+GmmI7REMBzA4Q0zjLQ6tOz4m3dp+fGyKY3rs1+vvE9ImPP67JG43V23euW7kXKZ2mOqi2Mm7YuxeoqnzRO+7SjibQ9S4d1m/pOq482cmzPWN94qie1VM+cSxrbXmtwHhcaaPMRFNnVcemZxcjbz7+Cr8s/2md484nVTVtPzNK1G/p2oY9ePlWK5ouW6u8T/vHvHde9O1CnMt78qo5w7HoetW9Us78q45x9Y9jygJFOAAAAAPbomk6jrWo2tP0vDu5WTcnami3Tv+sz5R7z0h8mYiN5fKqopiaqp2iHjpiaqoppiZmekRHmuzlPycu5FVjWuLrXw7HSu1p9W8VV+k3PSPy9/XbtMz5V8qdO4Wot6lqsWs/WJiJiZje3jz+TeOs/m/bbzspVtS1uZ3t48++ft93O9e8WzO9jCnh1q+33/R87Fm1j2Ldixat2rVqmKKKKKfDTTTHaIh3nu5eXU8/C0zBuZuo5dnExrcfPdu1xTTT6df8AZW4iquraOMqFTTXcq2jjMvQ5jaOsztEItwLx1ofGN7PtaTcuRViVxHhuxFNVyiY6VxH8u/Tr17b7bvjzj16eHuXup5duumnIv0fZbG9W0+O5vTMx7xT4qv8AtZoxbvpos1RtMzHCfa3KNOv/ANXTi10zTVMxz9rWjmXrc8Q8capqcXJuWar9VuxO/wD06flp2+sRv+qOA6Lboi3TFNPKHcrNqmzbpt08ojb9AB7ZAAAAAAAAAAAAAAAAAAAAAAAAAAAFzcpOUF3UPg63xXZqtYdURXYwpnau9HlVX500+3efaO+vk5VvGo89yf5aWfqFjAszdvztHzn2Qi/KzlpqfGV6nMvTOHo9uva5fn71zbbem3HrtPeeke/Zs1w7oumcP6Vb0zScS3jY1v8ADTHWqe01VT51T6z/AKPdYs2sexbx8e1RZs26Ypot0U7RTEdoiI7Q79lJz9SuZlXant+c3Jda16/qde0+rRHKPv3kk7OCuYppmqqYppp6zMz2RqCiN3O7ret271muzdt0XLdcTTXRVG9NVM94mHbrvtMbEej7E7ETMTvDVbnPwFc4P1r7Vh01VaPmVzNie/wau825n28p84+iv27XEWj4GvaNk6TqVmLuNkU+Gr1p9Ko9Jie0+rUXj/hbN4Q4lv6RmfPTHz497baL1qZnw1e3aYmPKYldtI1L+qo9HX/yj5/nV1rwzrsaha9Ddn+5T847/f8AVHwXDyo5P5OqzZ1jim3XjafMRXaxd9rl+JjpM7TvRHbp3n27pLJybeNR57k7J3O1CxgWpu36to+c+yEN5dcAa1xpl/8ACUfZtPt1RF7MuxPgp9qf5qvaP12bN8E8I6LwhpkYek40RXVH8bIr2m7dn1qqjy9uzMYGHi4GHaw8HHt42NZp8Nu1bpimmmPaIffdS9Q1W5lz5Y4U9vu5TrfiO/qVU0U+rb7d/edjdy611U0UzVXMU00xvMzO0RCKV6ImeEAqfmFzo0nSKruBw7RRqmbTM0zf3/gW6vr+Pr5R095ZDlBzNxuLrMaXqcW8bW6KZnw09KciI71Uekx50+nWOnbfq0zJps+mmnaPzjsma/D+fbxf6qq3tT267d9lk+auOc3Lm1xbgTqWmW7drWrFPy1T0jIpjf5Jn17bT+n0sZzu18bJrxrkXKJ4w0MHOvYN6L1mdpj82n3tGb9q5YvV2b1uq3dt1TTXRVG00zHSYmPV0bGc9OWsa3YucR6Djx/mdunxZNmjp9ooj8UR/PEfv27xG+ua/YWZRl2/PT8Y7Oz6TqlnUseLtvn1jtP5yAG2kwFqcp+UuXxFFjWNd8eJpFXzW7cTtdyYiZj60U7x3nv5erBkZFvHomu5O0NTNzrGFam7fq2j9/ZHtRLgDgfW+Ms+bOnWotY1uf4+Xdifh2/bp3q9o/tHVs/wJwbovB2mRjaZY3v10x9oya4/iXp958o7/L2j69Wa0vT8LS8C1gadi2sXFtU+Gi1bjamP/wB6y9Mypmoatcy58tPCn85uU634kv6lM26PVt9u/v8AtyIk82N4j13SeHtNr1HWM23i2Ke01TvVVPpTHeZ+m7X7mNzl1bW/HgcPRd0rAnpVdira/djf1j7ke0TM+/kwYWm3sud6Y2jrMtPStCytSq9SNqetU8v5+C1uY3NHQuEprxLc/wCY6ntP/DWq/lt9/v1eXXy7/wCrXPjLjDX+LMv4+sZtVy3TVM2sej5bVr+mn/ed592AqqqqqmqqZqqmd5mZ6zLhcMLTLOJHq8au/wCcnUtJ0HF02neiN6u88/h2SbljxNVwnxlh6tVNf2bf4eVRT+K1V36ee3SqPeITn/EpxVb1PVsLQMG9TdxMW3Tk3Kqe1Vyunen9qJien80qgc1VVVTvVMzPbeZZ68S3VkU355xGzau6bZuZlGXMetTEx+e7j+rgBtJEAAAAAAAAAAAAAAAAAAAAAAAAAAffAxMrPzLWHhY9zIyL1UU27dunxVVTPlEMhwnw3q/FGq0abo+LVeuz1rrnpRap/mqq8o/18t5bPcsOX2l8FYPjp8OVql2jbIyqo+m9FHTpTv19Z8/LaOz9StYdPHjV2Qes67Y0ujjxrnlT9Z7QjnKXlJi6DNjWeIabeVqu3it2OlVvGnyn0qrj17R5deq15cOd1Jycu7lV+e5P57HJNQ1G/n3fS3qt5/aO0Q4GO4g1zSdAwas3WNQsYdmImY+JVHir27xTHeqfaN5lRPMPnZqGoePB4Upuafiz0qyq4j41f9PeKI9+s+8MuHp1/Ln1I2jv0bWl6Hl6jV/ap2p/2nl+e5bXH3MLh/hDHqjLyKcnPmPkwrNUTcmduk1fyx7z38olrpx9zE4h4vu1W8q/9lwIqmaMOxVMUbeXinvXPvP6RCJ5F69kX7l/Iu13btyqaq666pqqqme8zM95fNbsHSrOJx51d5+jpuk+HMXToirbzV95+kdP3X9yA5i05Nm1wnrmR/xFEbYN+5VM/Ej/ANOZnzj8PrHTyje6+zReiqqiuK6KppqpneJidpiWzXJTmTb4pxaNF1e5FGtWaOlU9IyqY846/fiO8frHnERGs6X5Zm/ajh1j6qx4q8PTRM5uNHD/ACjt7Y+qz0U5n8HYvGfDdzBr8NvNs73MO/P4K9u0z/LPSJ/fySlzHdXrN2uzXFdE7THFSMXJu412m9anaYneFV8qOUmHw9NrVtfi1marG1VFrpNvGny28qqu3XtHl16rU3IcsmTlXcmvz3JZs/UcjPu+lv1bz+3siHEOXh1rVtN0XT7mfqubZxMaiPmruV7fpEd5n2hRvMPnfk5PjwOEbdWNa601Z12n+JV/RTPSmPeevtDLiafey59SOHfo2NM0XL1GrazTw61Ty/PYtfjrjvh/hDFqnUcum5lzTvbw7UxN2r9PKPedvbdrpzB5lcQcX1VWLtz7Dpu/TEsVT4aveufxT/b2Q7LycjMyrmVl37l+/dqmq5cuVTVVVM95mZ7y+S3YOk2cX1p9arvP0dO0jw3i6dtX/wAq+8/SOn7jvYu3bF6i9YuV2rtFUVUV0VbVUzHaYmO0uglVibIcmeadvX6LeicQ37drVadqbN6dqacr2nyivp+vl6LYaM266rddNdFU010zE01RO0xPrDYDkzzY/wAxrtcP8U5FNOXMxTjZtcxEXfyV/m9J8/r3q2q6PtvesRw6x9nOfEfhfyzOVhxw5zT9Y+y54lQXP/lzONdvcW6HYqqs3Kpr1CzT/wBOqf8AqRHfaZ33jy79t9r983Wumi5bqt10xXTVExVTVG8TE+UoTCzK8S756eXWO8KppOq3dMyIu0cusd4aMPthYuTm5VvFxLFy/fu1RTbt26ZqqqmfKIhafNXlRqWBxHbv8MYNzK0/PvRTRZtRvONXV+GfSj0ny7T6zbHKrl7gcGabRdu0WcjWblExkZVO8xETP3KN+1MbR16TO28+URbsjWLFqxF2md9+Ufd03N8T4ePiU5FE+aauUdfj22RXlVydx9M+DrHFVFvJzdvFbwpjxW7M/mntVV7do91x+e89XG6P8ZcZaBwlhze1jNppuzG9vGtz4r1zy+Wnv+szER5qjev5Gdd3neZ6RDmeTmZusZHrb1TPKIjl7o/Paz9cxTTNVUxER1mZ8lW8x+cekaFFeDoE2tV1DrTVXFW9i19Zj78+0T9Z8lV8xeauvcU13sPErq03Sat6Yx7U7V3af/cq89/5Y6fXur1P4GgxTtXkcZ7fdc9H8HU0bXc2d5/1jl8Z6snxHr2r8Q6hVnaxnXsu9Mzt45+WiPSmntTHtDGAslNMUxtHJe6KKaKYppjaIAH16AAAAAAAAAAAAAAAAAAAAAAAAAAAAEz5a8vdX40zIrtUzjaZbrim/l1x0j8tMfiq/tHmkPKXlPl8RVWdY16m5iaTvFVFqelzJj286affvMdvVsfg4mLgYdrCwsa3j41qPDbtW6Ypppj0iEDqes04+9u1xq+Ufyp2v+KaMPexjTFVzrPSPvP57GN4S4b0jhbSaNN0jGizbjrXXP37tX81dXnP9o8mY6kobx9zG4d4RtXLWTf+16jFO9GFZneqZn+adtqI+v7KpRReyrnCJqqlze1aytRvz5YmuufzdMa6qKKKqq5immmN5qmdoiFRcwudWmaZF3A4Ypp1HMjemcmrf4Fufbzr/tHvKpuP+Y3EPGFybWTe+yafEz4MOxO1M9d/nnvXPSO/SPKIQ1ZsHQaaNq7/ABnt0X/SPBtu1tdzJ81X+vT49/297JcQ67q/EGdObrGffzL3WKZuVdKI332pjtTHtDGgsVNMUxtHJeKKKaKYppjaIAH16Ey5XcGcScTavRk6LcrwLWLXFVWoTM0xaqj+WY6zV7R+u0JPyr5QZmuxb1biOm9g6bO1VuxEbXciP/hT7958vVsTp2FiadhWsPBxrWNj2afDbtW6Ypppj6IHUtZosxNu1xq+UKdr3im1iRNjH2qr79I+8+z/AOPrZprosUUXLk3a6aYiquaYia59ejtJKJ8d8wOHeEbFdOdlU386Kd6MOzPiuVT5b+VEfX9N1StWbl+ry0RvM9Icyx8a9l3PR2qZmZ7Qlnr2+qreYXOTRdD+Lg6HTRq2oRvTNUTtZtVR061bfP18qenuqDmDzN4h4tqqx6rs4Gm7z4cSxVPzR+ervV/aPZB1mwdApp2ryOM9unxdB0jwZRRtczZ3n/WOXxnr+c2a4r4o13ijN+1a1n3MiaZn4dv7tu3v/LTHSP8AWfNhQWOiimiPLTG0L1bt0WqYoojaI6QAPT2AAA5ppqqqimmJqqmdoiI6zILt5M82K7Ndrh/ivKmu1VPhxs67MzNEz2puT5x6VeXn07X307qC5UcnKsqmxrXFtFduzO1drT5jaquOkxNyfKPy9J9fOF92bdu1aotWqKaLdFPhpppjaKY9IUbWf6b029nn17buQ+Kf6CcrfEnj/lty39nt79HbzfPLybGLj3MjKvW7Nm3T4q7lyrw00xHeZlB+YXNHh7hSi7jW7lOpapT0jEtV9KZ/PVETFO3p1n282vHHHHHEHF+V8TVMvw49M/w8WzvTZo/Tzn3neTB0e9k+tV6tP5yg0jwtlZ21dz1KO88590fVanMbnbbtxc0/g6n4le8xVn3aPlj+ime/1np7T3UbqOdmajmXMzPyr2VkXJ3ru3a5qqq8u8vOLfi4VnFp8tuPj1dN07SsXTqPJYp27z1n3z+QANpIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAMnw1oWqcRarb0zSMWrIyK+u0dIpjzqqnyh8qqimN55PNddNumaqp2iHhxbF/KyLeNjWbl69cqimi3bpmqqqZ7RER3lsByo5O42BbsazxXapyMyYiu1hVdbdr08f81Xt2j3Svljy20ng2xTlVRTm6xVTtcyqqYmKO8TTbiY6R1237z9Oib37trHsV3r92i1aop8Vddc+GmmPWZVPUdaquTNrH5d+7m2u+K678zj4PCnrV1n3do+bv09JYriXiLReHMKczWtQsYluY3piqd67k+lNMdav03VjzC526fgRewOFbdOdlRHh+2V7xZtzv18Md6/r2+sdFEa9rOq67qFWfq+dezMirp4rlW/hj0iO1Me0dGLC0O7e2qverHz/AIYNJ8IX8mYuZXqU9us/b4/osrj/AJ16xqs3MLhuirSsKd4+NPXIrj137Ufp191UXbly9dru3a6rlyuqaqqqp3mqZ7zM+cugtePjWseny242dGwsDHwqPJYoimP398gDO3AEh4H4P1ri/U/sek2Pkp2m9kV7xbsx61T/ALR1ea66aKZqqnaIY7t2izRNdydojrLEaXp+dqmdawdOxL2Vk3Z2otWqZqqn/wCvdsRyq5RYOhRY1fiGinM1Wnau3Z33tY9XTb+quPXrHp23Svl5wFonBmFFOFb+PnXKYi/mXI+eudusU/y07+UfrM7JLqGdh6dhXM3OybWNjWqZqruXaoppiP1VLUNZrvz6LH4R85c11vxTdzKpx8LeKeW/Wfd2j93omfNiuI+IdF4dw5y9Z1Gxh29t6Yrq+av2pp+9V+m6p+O+eeNapuYfCONN+5vt9tyKNqI/oo7z+u30lSGt6vqet59Wdq2dfzMirp47tcztHpHpHtHR5wtCuXfWverHz/h40rwdfyNq8v1Ke3+U/b84LQ4/52apqfxcLhm1VpmLMzH2mqf49ceseVH6bz7qkv3ruRfrv37td27cqmquuuqZqqme8zM95dBacfFtY1Plt07OiYWn4+DR5LFO0fOffIA2G6AAAAAkvAPBes8ZalOLptFNuzb638m7vFu1H6d5nyiP7R1eLlym3TNVU7RDFevW7FE3Lk7UxzmWI0PSdS1vUbenaVh3cvJuT8tFuN+nrM9oj3no2R5XcqNN4WmzqeqTRn6xTtVFXe1Yn8kbdZ/NP6RCR8G8J8PcCaPcjDii38viys3ImIrriI6zVV2imJ8o6fr1V7zD53YmNRcwOEKPtGRE7Tm3aP4VMefgpnrVPvPT6q1fzMjUaptYsbU9+/2ULN1XO1yucfT6Zi31q5b++ekeznPyWhxRxPoXDOHOTrOo2caNt6be+9yvrttTRHWf22UDzA5y65rc3cLQor0jAnePHRV/HuRv51R936U/vKudZ1TUdZ1C5n6pmXsvJufeuXat5+kekekR0h42/haNZx/Wr9ar5JnSfCuLg7XLvr1+3lHuj6y5mZmd56y4BMrSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAt3lNyhyNapo1fie3fxNP3ibWN925fj1nzpp/vPkwZGTbx6PPcnaGnnZ9jBtTdv1bR+/uRHlvwBrHGmdH2emcfTrdcU5GZXHy0+1Mfiq9o9Y32bPcG8K6PwnpVOBpONFHSPi36oj4l6qPOqf328o8tnz1/iDhngnR7VObk4+Bj26PDYxbcfPVEb7RRRHXb37esqG5gc49c12LuFosVaTp9U7eKir+Pcjfzqj7u/pT+8q3XVl6tVtTHlt/n6/BQ71ep+JKtrdPks+384z7uEfNcXMLmbw/wjRVjzcjUNSiYiMOzV1p8966usUx+89ekNd+OuPuIuL73/Msr4WJE70Yljem1HvMfin3ndFpmapmZmZmeszLhM4Wl2MTjEb1d5/OC1aT4exNNiKqY81f+0/Tt+cQBJJ4AAHexau371Fmzbru3a6opooopmaqpntERHeV7cquTlOPNrWeMLcTcpnx2tPnaaY97k9p9fDH6+jVysy1i0ea5Pw6yj9R1PH0+36S9PujrPuQvlbyt1Piy5Rn6h8TA0aJ3+LMfPf8AaiJ/8p6fVspomlaXw9pFvB07GtYeHYp36bR9aqp85nzmesoZx1zY4Z4Zs14mFdo1TUKIiKbGNVHw6P6q43iNvSN59oUHxzx9xHxddmNRy/hYkTvRiWN6bUe8xv8ANPvO6Brx8zVKt7nqUfnRTbmFqniGuKr39u10j+Os+2do7Lq5g859G0aKsPh34Wr528xVc3n4FqYmPOPv/wDbO3uoXizinXOKM6crWc+5f670Wona3b9qae0f6+rCiaxNOsYkepHHv1WvTNDxNOp/tU71d55/x8ABvJcAAAAAAHezauXrtFmzbruXK6opooojeapntER5yt7hHgLQeFMCzxLzHyrVirpXj6XVMTXV6TVTHWqe3yxG0finvEYL+RRZjeeM9IjnLTzM23i071cZnlEcZn3QwvKrlbqHFldOo6l8XB0WOsXYiPHfn+WiJ/8ALbb03W7xPxzwfy40m3o+mWrORkWY8NGBi17eH3rr67T677zO/bzVXzD5w6vr1u5puh26tI0zfaKqKtr9ymO0TMTtTG23y0/vKsJmZneeso2cK7mVRXkztT0pj6yg6tJyNUri5qE+WiOVET/7T1lKOOuPOIeL7/8AzLK+HiUzvbxLPy2qfeY/FPvO/tsiwJa3bot0+WiNoWOzYt2KIt26YiI6QAPbKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPRp2Fl6jnWcHBx7mRk3qoot27cb1VTLK8FcKavxbq8afpVnfwx4r16vpbtU+tU/7d5Whb4h4K5V4lzB4ft2+IOIZiacjMnpRbq7TT4o7Rv+GmZ95at/J8k+S3Hmq7fftCOzM+bU+is0+e5PTt7ap6R+/RmuW/K3SOFsKOIuNLuLVlW48cW71dPwMb3qmelVf9o8t52l4OYPPGinxYXB1uK5mNqs7It7RHT8FE+fvV+091S8X8Xa9xVmzkaxnV3afFvbsUzMWrf9NPaPr3YFp29N9JX6XKnzVdukIyzoM37v8AUahV56+kf4x7Ijq9eranqGr5tebqmbfzMmv71y9XNVW3p18vZ5ASsRERtCx00xTG0RwAH19AAGS4b0TUuIdYsaVpWPN7JvTtEdopjzqqnyiIY179M1nVtLs37Wm6llYdF+NrsWLs0eOPSdu7zX5tvV5vFzz+WfJtv7Vz6LTwHylp+LqeVTrPFEUfPRjRFfwZneNqZnaKOk9ZmfFPptOyCcdc0uJuKPiY0X/8t0+rxU/ZsaqY8dM+VdXer+0eyC1TNUzMzMzPWZlw1LeDbpr9Jc9arvP0jojMfSLNF3096fPc7z090coj83AG6lgAAAAAAAAAGf4V4lr4a8eVpuBjVapVvTRmZFPxJsU+tuntFXfeqd+nSIjrvitV1HP1XNrzdSzL+Zk1/eu3q5qqn0jefL2eUeYopirzbcWOLVEVzXEcZ6gD0yAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADI6Tg4t6Zv6nlzh4dNMzFUUeOu7Mfgop85n1naI8/KJxzmqqqqd6pmZ2iOs+j5L5VEzG0JRrXGmbf0enQNFs/5NolHfGs17135mNpqu17RNcz5x0j2RYHyiimiNqYeLdqi1G1EbAD0yAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/Z" alt="Repp logo"/>
+    <span class="nav-wordmark">REPP</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#features">Features</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <button class="nav-cta" onclick="document.getElementById('waitlist').scrollIntoView({behavior:'smooth'})">Join Waitlist</button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <p class="hero-tag">Coming Soon — Join the Waitlist</p>
+  <div class="hero-logo-mark">
+    <img src="data:image/png;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAH0AfQDASIAAhEBAxEB/8QAHAABAAICAwEAAAAAAAAAAAAAAAYHBQgBAgQD/8QAPRABAAEDAgQEAwYEBAUFAAAAAAECAwQFEQYHITESQVFhEyJxFDJCYoGRI1JyoQgVscEkJUOCslNjwuHw/8QAGwEBAAIDAQEAAAAAAAAAAAAAAAUGAwQHAgH/xAA1EQEAAQMCBAIJAwQCAwAAAAAAAQIDBAURITFBUQYSEyJhcYGhwdHwkbHhFCNCUjJDJLLx/9oADAMBAAIRAxEAPwDTIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHa3RXcrpt26aq66p2pppjeZn0gHUezWNM1DSM+vA1PEu4mTRFNVVq5G1URMRMf2mHjfInfjD5TVFUbxyAH19AAAAAABOuWfLTWOM64yt/sOlU1eGvKrp3muY7xRHnPv2+s9GE474U1LhDXa9L1GmKomPHYvUfcvUeVUenvHkwU5Nqq5NqKo80dGpRn49d+cemuJrjjswADO2wAAAAAAAAAF6ci9T4T4kxauHde4c0KrU7FuIsXqsG3FWRbiNp3nbebkdZmY7x18pWLmcsOAsqmmm5w3i0bTvvarrtz+9NUdFE8n+ANd4k1Sxq1i/e0zT8W7EzmUzMVzVG3y2/WfftHv2bTR0iI6zt5yp2sXZsZH9m5PHnETPBy/xRkTiZn/AIt+YmecRM8J/Xr2V7d5NcBV3prjTci3E/gpy6/DHT3nd8b/ACV4FuW5ppxc2zO/3qMqrft+beFjufNGxqOVH/ZP6q/Gu6jH/fV+sqK5l8q+D+F+Cs/WbOVqUZNqmmnHpu36JiuuqqIiNvDEz3mfpCi14/4p9Z8V/SNAoqqjw01Zd2PKd/lo/wBK/wB1HLjpNV2vGiu7VvM/s6l4bryLmBTdyKpqqq48e3L+fiAJJPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJBwPwjrHF+q04Ol2J8ETHxsiuJ+HZp9ap/wBu8vNddNFM1VTtEMd27RZomu5O0R1YzRNL1DWtTs6bpeLcycq9V4aLdEf3n0iPOZ6Q2X5T8sMDhKzRqGoRazdZqiJ+L4flx+m000b+fWfm6bs5y84H0jgvTfgYNPxsu5H8fLrpjx3J9I9KfSn9/VKd1P1PWKr+9uzwp+c/w5fr/imvMmbGNwt9Z6z9o/JV7zr4Bji/RacvT7dEazh0zNmdoj41Hf4cz/ePf6tWq6aqK6qK6ZpqpnaYmNpiW889lEf4heX1VNy7xho9iqaap31CzRT93pEfFiI9fxfv6y2NE1Laf6e5PDpP0bvhDXfJMYV+eH+Mz+32UaAtTo4AAD36Do+p67qVvTtJwruXk19qLcb7R6zPaI956PkzERvLzVVTRE1VTtEPDTE1VRTTEzM9IiPNdvKvk1cvzZ1ji+3VbtdK7Wn77VVx0mJuTHaPy9/XbtMz5XcqNM4W+HqWqVW9R1faJiqad7WPP5InvV+af0287I3VbUtb33t48++fs55rvi6at7GFPDlNX2+/6OmNZs41i3j49q3as26Yot0UU+GmmI7REMBzA4Q0zjLQ6tOz4m3dp+fGyKY3rs1+vvE9ImPP67JG43V23euW7kXKZ2mOqi2Mm7YuxeoqnzRO+7SjibQ9S4d1m/pOq482cmzPWN94qie1VM+cSxrbXmtwHhcaaPMRFNnVcemZxcjbz7+Cr8s/2md484nVTVtPzNK1G/p2oY9ePlWK5ouW6u8T/vHvHde9O1CnMt78qo5w7HoetW9Us78q45x9Y9jygJFOAAAAAPbomk6jrWo2tP0vDu5WTcnami3Tv+sz5R7z0h8mYiN5fKqopiaqp2iHjpiaqoppiZmekRHmuzlPycu5FVjWuLrXw7HSu1p9W8VV+k3PSPy9/XbtMz5V8qdO4Wot6lqsWs/WJiJiZje3jz+TeOs/m/bbzspVtS1uZ3t48++ft93O9e8WzO9jCnh1q+33/R87Fm1j2Ldixat2rVqmKKKKKfDTTTHaIh3nu5eXU8/C0zBuZuo5dnExrcfPdu1xTTT6df8AZW4iquraOMqFTTXcq2jjMvQ5jaOsztEItwLx1ofGN7PtaTcuRViVxHhuxFNVyiY6VxH8u/Tr17b7bvjzj16eHuXup5duumnIv0fZbG9W0+O5vTMx7xT4qv8AtZoxbvpos1RtMzHCfa3KNOv/ANXTi10zTVMxz9rWjmXrc8Q8capqcXJuWar9VuxO/wD06flp2+sRv+qOA6Lboi3TFNPKHcrNqmzbpt08ojb9AB7ZAAAAAAAAAAAAAAAAAAAAAAAAAAAFzcpOUF3UPg63xXZqtYdURXYwpnau9HlVX500+3efaO+vk5VvGo89yf5aWfqFjAszdvztHzn2Qi/KzlpqfGV6nMvTOHo9uva5fn71zbbem3HrtPeeke/Zs1w7oumcP6Vb0zScS3jY1v8ADTHWqe01VT51T6z/AKPdYs2sexbx8e1RZs26Ypot0U7RTEdoiI7Q79lJz9SuZlXant+c3Jda16/qde0+rRHKPv3kk7OCuYppmqqYppp6zMz2RqCiN3O7ret271muzdt0XLdcTTXRVG9NVM94mHbrvtMbEej7E7ETMTvDVbnPwFc4P1r7Vh01VaPmVzNie/wau825n28p84+iv27XEWj4GvaNk6TqVmLuNkU+Gr1p9Ko9Jie0+rUXj/hbN4Q4lv6RmfPTHz497baL1qZnw1e3aYmPKYldtI1L+qo9HX/yj5/nV1rwzrsaha9Ddn+5T847/f8AVHwXDyo5P5OqzZ1jim3XjafMRXaxd9rl+JjpM7TvRHbp3n27pLJybeNR57k7J3O1CxgWpu36to+c+yEN5dcAa1xpl/8ACUfZtPt1RF7MuxPgp9qf5qvaP12bN8E8I6LwhpkYek40RXVH8bIr2m7dn1qqjy9uzMYGHi4GHaw8HHt42NZp8Nu1bpimmmPaIffdS9Q1W5lz5Y4U9vu5TrfiO/qVU0U+rb7d/edjdy611U0UzVXMU00xvMzO0RCKV6ImeEAqfmFzo0nSKruBw7RRqmbTM0zf3/gW6vr+Pr5R095ZDlBzNxuLrMaXqcW8bW6KZnw09KciI71Uekx50+nWOnbfq0zJps+mmnaPzjsma/D+fbxf6qq3tT267d9lk+auOc3Lm1xbgTqWmW7drWrFPy1T0jIpjf5Jn17bT+n0sZzu18bJrxrkXKJ4w0MHOvYN6L1mdpj82n3tGb9q5YvV2b1uq3dt1TTXRVG00zHSYmPV0bGc9OWsa3YucR6Djx/mdunxZNmjp9ooj8UR/PEfv27xG+ua/YWZRl2/PT8Y7Oz6TqlnUseLtvn1jtP5yAG2kwFqcp+UuXxFFjWNd8eJpFXzW7cTtdyYiZj60U7x3nv5erBkZFvHomu5O0NTNzrGFam7fq2j9/ZHtRLgDgfW+Ms+bOnWotY1uf4+Xdifh2/bp3q9o/tHVs/wJwbovB2mRjaZY3v10x9oya4/iXp958o7/L2j69Wa0vT8LS8C1gadi2sXFtU+Gi1bjamP/wB6y9Mypmoatcy58tPCn85uU634kv6lM26PVt9u/v8AtyIk82N4j13SeHtNr1HWM23i2Ke01TvVVPpTHeZ+m7X7mNzl1bW/HgcPRd0rAnpVdira/djf1j7ke0TM+/kwYWm3sud6Y2jrMtPStCytSq9SNqetU8v5+C1uY3NHQuEprxLc/wCY6ntP/DWq/lt9/v1eXXy7/wCrXPjLjDX+LMv4+sZtVy3TVM2sej5bVr+mn/ed592AqqqqqmqqZqqmd5mZ6zLhcMLTLOJHq8au/wCcnUtJ0HF02neiN6u88/h2SbljxNVwnxlh6tVNf2bf4eVRT+K1V36ee3SqPeITn/EpxVb1PVsLQMG9TdxMW3Tk3Kqe1Vyunen9qJien80qgc1VVVTvVMzPbeZZ68S3VkU355xGzau6bZuZlGXMetTEx+e7j+rgBtJEAAAAAAAAAAAAAAAAAAAAAAAAAAffAxMrPzLWHhY9zIyL1UU27dunxVVTPlEMhwnw3q/FGq0abo+LVeuz1rrnpRap/mqq8o/18t5bPcsOX2l8FYPjp8OVql2jbIyqo+m9FHTpTv19Z8/LaOz9StYdPHjV2Qes67Y0ujjxrnlT9Z7QjnKXlJi6DNjWeIabeVqu3it2OlVvGnyn0qrj17R5deq15cOd1Jycu7lV+e5P57HJNQ1G/n3fS3qt5/aO0Q4GO4g1zSdAwas3WNQsYdmImY+JVHir27xTHeqfaN5lRPMPnZqGoePB4Upuafiz0qyq4j41f9PeKI9+s+8MuHp1/Ln1I2jv0bWl6Hl6jV/ap2p/2nl+e5bXH3MLh/hDHqjLyKcnPmPkwrNUTcmduk1fyx7z38olrpx9zE4h4vu1W8q/9lwIqmaMOxVMUbeXinvXPvP6RCJ5F69kX7l/Iu13btyqaq666pqqqme8zM95fNbsHSrOJx51d5+jpuk+HMXToirbzV95+kdP3X9yA5i05Nm1wnrmR/xFEbYN+5VM/Ej/ANOZnzj8PrHTyje6+zReiqqiuK6KppqpneJidpiWzXJTmTb4pxaNF1e5FGtWaOlU9IyqY846/fiO8frHnERGs6X5Zm/ajh1j6qx4q8PTRM5uNHD/ACjt7Y+qz0U5n8HYvGfDdzBr8NvNs73MO/P4K9u0z/LPSJ/fySlzHdXrN2uzXFdE7THFSMXJu412m9anaYneFV8qOUmHw9NrVtfi1marG1VFrpNvGny28qqu3XtHl16rU3IcsmTlXcmvz3JZs/UcjPu+lv1bz+3siHEOXh1rVtN0XT7mfqubZxMaiPmruV7fpEd5n2hRvMPnfk5PjwOEbdWNa601Z12n+JV/RTPSmPeevtDLiafey59SOHfo2NM0XL1GrazTw61Ty/PYtfjrjvh/hDFqnUcum5lzTvbw7UxN2r9PKPedvbdrpzB5lcQcX1VWLtz7Dpu/TEsVT4aveufxT/b2Q7LycjMyrmVl37l+/dqmq5cuVTVVVM95mZ7y+S3YOk2cX1p9arvP0dO0jw3i6dtX/wAq+8/SOn7jvYu3bF6i9YuV2rtFUVUV0VbVUzHaYmO0uglVibIcmeadvX6LeicQ37drVadqbN6dqacr2nyivp+vl6LYaM266rddNdFU010zE01RO0xPrDYDkzzY/wAxrtcP8U5FNOXMxTjZtcxEXfyV/m9J8/r3q2q6PtvesRw6x9nOfEfhfyzOVhxw5zT9Y+y54lQXP/lzONdvcW6HYqqs3Kpr1CzT/wBOqf8AqRHfaZ33jy79t9r983Wumi5bqt10xXTVExVTVG8TE+UoTCzK8S756eXWO8KppOq3dMyIu0cusd4aMPthYuTm5VvFxLFy/fu1RTbt26ZqqqmfKIhafNXlRqWBxHbv8MYNzK0/PvRTRZtRvONXV+GfSj0ny7T6zbHKrl7gcGabRdu0WcjWblExkZVO8xETP3KN+1MbR16TO28+URbsjWLFqxF2md9+Ufd03N8T4ePiU5FE+aauUdfj22RXlVydx9M+DrHFVFvJzdvFbwpjxW7M/mntVV7do91x+e89XG6P8ZcZaBwlhze1jNppuzG9vGtz4r1zy+Wnv+szER5qjev5Gdd3neZ6RDmeTmZusZHrb1TPKIjl7o/Paz9cxTTNVUxER1mZ8lW8x+cekaFFeDoE2tV1DrTVXFW9i19Zj78+0T9Z8lV8xeauvcU13sPErq03Sat6Yx7U7V3af/cq89/5Y6fXur1P4GgxTtXkcZ7fdc9H8HU0bXc2d5/1jl8Z6snxHr2r8Q6hVnaxnXsu9Mzt45+WiPSmntTHtDGAslNMUxtHJe6KKaKYppjaIAH16AAAAAAAAAAAAAAAAAAAAAAAAAAAAEz5a8vdX40zIrtUzjaZbrim/l1x0j8tMfiq/tHmkPKXlPl8RVWdY16m5iaTvFVFqelzJj286affvMdvVsfg4mLgYdrCwsa3j41qPDbtW6Ypppj0iEDqes04+9u1xq+Ufyp2v+KaMPexjTFVzrPSPvP57GN4S4b0jhbSaNN0jGizbjrXXP37tX81dXnP9o8mY6kobx9zG4d4RtXLWTf+16jFO9GFZneqZn+adtqI+v7KpRReyrnCJqqlze1aytRvz5YmuufzdMa6qKKKqq5immmN5qmdoiFRcwudWmaZF3A4Ypp1HMjemcmrf4Fufbzr/tHvKpuP+Y3EPGFybWTe+yafEz4MOxO1M9d/nnvXPSO/SPKIQ1ZsHQaaNq7/ABnt0X/SPBtu1tdzJ81X+vT49/297JcQ67q/EGdObrGffzL3WKZuVdKI332pjtTHtDGgsVNMUxtHJeKKKaKYppjaIAH16Ey5XcGcScTavRk6LcrwLWLXFVWoTM0xaqj+WY6zV7R+u0JPyr5QZmuxb1biOm9g6bO1VuxEbXciP/hT7958vVsTp2FiadhWsPBxrWNj2afDbtW6Ypppj6IHUtZosxNu1xq+UKdr3im1iRNjH2qr79I+8+z/AOPrZprosUUXLk3a6aYiquaYia59ejtJKJ8d8wOHeEbFdOdlU386Kd6MOzPiuVT5b+VEfX9N1StWbl+ry0RvM9Icyx8a9l3PR2qZmZ7Qlnr2+qreYXOTRdD+Lg6HTRq2oRvTNUTtZtVR061bfP18qenuqDmDzN4h4tqqx6rs4Gm7z4cSxVPzR+ervV/aPZB1mwdApp2ryOM9unxdB0jwZRRtczZ3n/WOXxnr+c2a4r4o13ijN+1a1n3MiaZn4dv7tu3v/LTHSP8AWfNhQWOiimiPLTG0L1bt0WqYoojaI6QAPT2AAA5ppqqqimmJqqmdoiI6zILt5M82K7Ndrh/ivKmu1VPhxs67MzNEz2puT5x6VeXn07X307qC5UcnKsqmxrXFtFduzO1drT5jaquOkxNyfKPy9J9fOF92bdu1aotWqKaLdFPhpppjaKY9IUbWf6b029nn17buQ+Kf6CcrfEnj/lty39nt79HbzfPLybGLj3MjKvW7Nm3T4q7lyrw00xHeZlB+YXNHh7hSi7jW7lOpapT0jEtV9KZ/PVETFO3p1n282vHHHHHEHF+V8TVMvw49M/w8WzvTZo/Tzn3neTB0e9k+tV6tP5yg0jwtlZ21dz1KO88590fVanMbnbbtxc0/g6n4le8xVn3aPlj+ime/1np7T3UbqOdmajmXMzPyr2VkXJ3ru3a5qqq8u8vOLfi4VnFp8tuPj1dN07SsXTqPJYp27z1n3z+QANpIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAMnw1oWqcRarb0zSMWrIyK+u0dIpjzqqnyh8qqimN55PNddNumaqp2iHhxbF/KyLeNjWbl69cqimi3bpmqqqZ7RER3lsByo5O42BbsazxXapyMyYiu1hVdbdr08f81Xt2j3Svljy20ng2xTlVRTm6xVTtcyqqYmKO8TTbiY6R1237z9Oib37trHsV3r92i1aop8Vddc+GmmPWZVPUdaquTNrH5d+7m2u+K678zj4PCnrV1n3do+bv09JYriXiLReHMKczWtQsYluY3piqd67k+lNMdav03VjzC526fgRewOFbdOdlRHh+2V7xZtzv18Md6/r2+sdFEa9rOq67qFWfq+dezMirp4rlW/hj0iO1Me0dGLC0O7e2qverHz/AIYNJ8IX8mYuZXqU9us/b4/osrj/AJ16xqs3MLhuirSsKd4+NPXIrj137Ufp191UXbly9dru3a6rlyuqaqqqp3mqZ7zM+cugtePjWseny242dGwsDHwqPJYoimP398gDO3AEh4H4P1ri/U/sek2Pkp2m9kV7xbsx61T/ALR1ea66aKZqqnaIY7t2izRNdydojrLEaXp+dqmdawdOxL2Vk3Z2otWqZqqn/wCvdsRyq5RYOhRY1fiGinM1Wnau3Z33tY9XTb+quPXrHp23Svl5wFonBmFFOFb+PnXKYi/mXI+eudusU/y07+UfrM7JLqGdh6dhXM3OybWNjWqZqruXaoppiP1VLUNZrvz6LH4R85c11vxTdzKpx8LeKeW/Wfd2j93omfNiuI+IdF4dw5y9Z1Gxh29t6Yrq+av2pp+9V+m6p+O+eeNapuYfCONN+5vt9tyKNqI/oo7z+u30lSGt6vqet59Wdq2dfzMirp47tcztHpHpHtHR5wtCuXfWverHz/h40rwdfyNq8v1Ke3+U/b84LQ4/52apqfxcLhm1VpmLMzH2mqf49ceseVH6bz7qkv3ruRfrv37td27cqmquuuqZqqme8zM95dBacfFtY1Plt07OiYWn4+DR5LFO0fOffIA2G6AAAAAkvAPBes8ZalOLptFNuzb638m7vFu1H6d5nyiP7R1eLlym3TNVU7RDFevW7FE3Lk7UxzmWI0PSdS1vUbenaVh3cvJuT8tFuN+nrM9oj3no2R5XcqNN4WmzqeqTRn6xTtVFXe1Yn8kbdZ/NP6RCR8G8J8PcCaPcjDii38viys3ImIrriI6zVV2imJ8o6fr1V7zD53YmNRcwOEKPtGRE7Tm3aP4VMefgpnrVPvPT6q1fzMjUaptYsbU9+/2ULN1XO1yucfT6Zi31q5b++ekeznPyWhxRxPoXDOHOTrOo2caNt6be+9yvrttTRHWf22UDzA5y65rc3cLQor0jAnePHRV/HuRv51R936U/vKudZ1TUdZ1C5n6pmXsvJufeuXat5+kekekR0h42/haNZx/Wr9ar5JnSfCuLg7XLvr1+3lHuj6y5mZmd56y4BMrSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAt3lNyhyNapo1fie3fxNP3ibWN925fj1nzpp/vPkwZGTbx6PPcnaGnnZ9jBtTdv1bR+/uRHlvwBrHGmdH2emcfTrdcU5GZXHy0+1Mfiq9o9Y32bPcG8K6PwnpVOBpONFHSPi36oj4l6qPOqf328o8tnz1/iDhngnR7VObk4+Bj26PDYxbcfPVEb7RRRHXb37esqG5gc49c12LuFosVaTp9U7eKir+Pcjfzqj7u/pT+8q3XVl6tVtTHlt/n6/BQ71ep+JKtrdPks+384z7uEfNcXMLmbw/wjRVjzcjUNSiYiMOzV1p8966usUx+89ekNd+OuPuIuL73/Msr4WJE70Yljem1HvMfin3ndFpmapmZmZmeszLhM4Wl2MTjEb1d5/OC1aT4exNNiKqY81f+0/Tt+cQBJJ4AAHexau371Fmzbru3a6opooopmaqpntERHeV7cquTlOPNrWeMLcTcpnx2tPnaaY97k9p9fDH6+jVysy1i0ea5Pw6yj9R1PH0+36S9PujrPuQvlbyt1Piy5Rn6h8TA0aJ3+LMfPf8AaiJ/8p6fVspomlaXw9pFvB07GtYeHYp36bR9aqp85nzmesoZx1zY4Z4Zs14mFdo1TUKIiKbGNVHw6P6q43iNvSN59oUHxzx9xHxddmNRy/hYkTvRiWN6bUe8xv8ANPvO6Brx8zVKt7nqUfnRTbmFqniGuKr39u10j+Os+2do7Lq5g859G0aKsPh34Wr528xVc3n4FqYmPOPv/wDbO3uoXizinXOKM6crWc+5f670Wona3b9qae0f6+rCiaxNOsYkepHHv1WvTNDxNOp/tU71d55/x8ABvJcAAAAAAHezauXrtFmzbruXK6opooojeapntER5yt7hHgLQeFMCzxLzHyrVirpXj6XVMTXV6TVTHWqe3yxG0finvEYL+RRZjeeM9IjnLTzM23i071cZnlEcZn3QwvKrlbqHFldOo6l8XB0WOsXYiPHfn+WiJ/8ALbb03W7xPxzwfy40m3o+mWrORkWY8NGBi17eH3rr67T677zO/bzVXzD5w6vr1u5puh26tI0zfaKqKtr9ymO0TMTtTG23y0/vKsJmZneeso2cK7mVRXkztT0pj6yg6tJyNUri5qE+WiOVET/7T1lKOOuPOIeL7/8AzLK+HiUzvbxLPy2qfeY/FPvO/tsiwJa3bot0+WiNoWOzYt2KIt26YiI6QAPbKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPRp2Fl6jnWcHBx7mRk3qoot27cb1VTLK8FcKavxbq8afpVnfwx4r16vpbtU+tU/7d5Whb4h4K5V4lzB4ft2+IOIZiacjMnpRbq7TT4o7Rv+GmZ95at/J8k+S3Hmq7fftCOzM+bU+is0+e5PTt7ap6R+/RmuW/K3SOFsKOIuNLuLVlW48cW71dPwMb3qmelVf9o8t52l4OYPPGinxYXB1uK5mNqs7It7RHT8FE+fvV+091S8X8Xa9xVmzkaxnV3afFvbsUzMWrf9NPaPr3YFp29N9JX6XKnzVdukIyzoM37v8AUahV56+kf4x7Ijq9eranqGr5tebqmbfzMmv71y9XNVW3p18vZ5ASsRERtCx00xTG0RwAH19AAGS4b0TUuIdYsaVpWPN7JvTtEdopjzqqnyiIY179M1nVtLs37Wm6llYdF+NrsWLs0eOPSdu7zX5tvV5vFzz+WfJtv7Vz6LTwHylp+LqeVTrPFEUfPRjRFfwZneNqZnaKOk9ZmfFPptOyCcdc0uJuKPiY0X/8t0+rxU/ZsaqY8dM+VdXer+0eyC1TNUzMzMzPWZlw1LeDbpr9Jc9arvP0jojMfSLNF3096fPc7z090coj83AG6lgAAAAAAAAAGf4V4lr4a8eVpuBjVapVvTRmZFPxJsU+tuntFXfeqd+nSIjrvitV1HP1XNrzdSzL+Zk1/eu3q5qqn0jefL2eUeYopirzbcWOLVEVzXEcZ6gD0yAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADI6Tg4t6Zv6nlzh4dNMzFUUeOu7Mfgop85n1naI8/KJxzmqqqqd6pmZ2iOs+j5L5VEzG0JRrXGmbf0enQNFs/5NolHfGs17135mNpqu17RNcz5x0j2RYHyiimiNqYeLdqi1G1EbAD0yAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/Z" alt="Repp logo"/>
+  </div>
+  <h1 class="hero-title">Track.<br/><span>Progress.</span><br/>Repeat.</h1>
+  <p class="hero-sub">The gym tracker built for people who actually show up. Log workouts, chase PRs, and watch your progress climb.</p>
+  <div class="hero-actions">
+    <button class="btn-primary" onclick="document.getElementById('waitlist').scrollIntoView({behavior:'smooth'})">Join the Waitlist</button>
+    <button class="btn-ghost" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">See Features</button>
+  </div>
+</section>
+
+<!-- APP PREVIEW -->
+<section id="preview">
+  <div class="phone-wrap">
+    <div class="phone">
+      <div class="phone-notch"></div>
+      <div class="phone-screen">
+        <div class="phone-header">TODAY'S WORKOUT</div>
+        <div class="exercise-row">
+          <div class="ex-name">BENCH PRESS</div>
+          <div class="suggest-chip">&#128161; Try 82.5kg — based on your 1RM</div>
+          <div class="set-row">
+            <div class="set-chip done">80kg &times; 5 &#10003;</div>
+            <div class="set-chip done">80kg &times; 5 &#10003;</div>
+            <div class="set-chip">80kg &times; 5</div>
+          </div>
+        </div>
+        <div class="exercise-row">
+          <div class="ex-name">SQUAT</div>
+          <div class="set-row">
+            <div class="set-chip done">100kg &times; 4 &#10003;</div>
+            <div class="set-chip done">100kg &times; 4 &#10003;</div>
+            <div class="set-chip">100kg &times; 4</div>
+          </div>
+        </div>
+        <div class="exercise-row">
+          <div class="ex-name">OHP</div>
+          <div class="set-row">
+            <div class="set-chip">55kg &times; 6</div>
+            <div class="set-chip">55kg &times; 6</div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="phone-wrap" style="margin-top:48px">
+    <div class="phone phone2">
+      <div class="phone-notch"></div>
+      <div class="phone-screen">
+        <div class="phone-header">PROGRESS — BENCH PRESS</div>
+        <div style="display:flex;align-items:flex-end;gap:6px;height:120px;margin:16px 0;padding:0 4px;">
+          <div style="flex:1;background:rgba(34,197,94,0.2);height:40%;border-radius:3px 3px 0 0;"></div>
+          <div style="flex:1;background:rgba(34,197,94,0.3);height:55%;border-radius:3px 3px 0 0;"></div>
+          <div style="flex:1;background:rgba(34,197,94,0.4);height:60%;border-radius:3px 3px 0 0;"></div>
+          <div style="flex:1;background:rgba(34,197,94,0.5);height:70%;border-radius:3px 3px 0 0;"></div>
+          <div style="flex:1;background:rgba(34,197,94,0.65);height:80%;border-radius:3px 3px 0 0;"></div>
+          <div style="flex:1;background:rgba(34,197,94,0.8);height:88%;border-radius:3px 3px 0 0;"></div>
+          <div style="flex:1;background:#22c55e;height:100%;border-radius:3px 3px 0 0;"></div>
+        </div>
+        <div style="font-family:var(--mono);font-size:9px;color:var(--green);margin-bottom:12px;">+12.5KG IN 8 WEEKS &#127942;</div>
+        <div class="exercise-row" style="margin-bottom:6px">
+          <div class="ex-name">PERSONAL RECORD</div>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--green);margin-top:4px;">90kg &times; 3 — 3 days ago</div>
+        </div>
+        <div class="exercise-row">
+          <div class="ex-name">EST. 1RM</div>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--green);margin-top:4px;">97.5KG</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="preview-copy reveal">
+    <p class="label">Built for Progress</p>
+    <h2>Every rep.<br/>Tracked.</h2>
+    <p>Repp keeps your entire training history in one place. See your numbers go up over time, get smart weight suggestions, and never lose track of where you left off.</p>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+  <p class="section-label reveal">What's Inside</p>
+  <h2 class="section-title reveal">Built Different.</h2>
+  <div class="features-grid">
+    <div class="feature-card reveal">
+      <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+      <h3>Workout Logging</h3>
+      <p>Log sets, reps, and weight for 70+ exercises or create your own. Clean interface built for the gym floor.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-pro">PRO</div>
+      <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      <h3>Progress Charts</h3>
+      <p>Visualize your max weight over time per exercise. Watch the line go up. Stay motivated.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-pro">PRO</div>
+      <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      <h3>Smart Suggestions</h3>
+      <p>Epley-based 1RM calculations recommend your next weight based on your goal — Strength, Hypertrophy, or Endurance.</p>
+    </div>
+    <div class="feature-card reveal">
+      <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      <h3>Personal Records</h3>
+      <p>Every PR is automatically tracked across all exercises. Know exactly when you hit a new best.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-pro">PRO</div>
+      <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+      <h3>Streak Tracker</h3>
+      <p>Track your current and longest training streak based on your scheduled days. Consistency is the goal.</p>
+    </div>
+    <div class="feature-card reveal">
+      <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+      <h3>Rest Timer</h3>
+      <p>Auto-starts between sets. Configurable from 30s to 4 minutes. Never lose track of your rest.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-pro">PRO</div>
+      <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+      <h3>Workout Templates</h3>
+      <p>Save your favourite workouts as templates. Load them in one tap and get straight to lifting.</p>
+    </div>
+    <div class="feature-card reveal">
+      <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>
+      <h3>Plate Calculator</h3>
+      <p>Enter your target weight and bar — Repp shows you exactly which plates to load per side, color-coded.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <p class="section-label reveal">Pricing</p>
+  <h2 class="section-title reveal">Simple.<br/>Honest.</h2>
+  <div class="pricing-grid reveal">
+    <div class="plan">
+      <p class="plan-name">Free</p>
+      <div class="plan-price">&#8364;0<span>/mo</span></div>
+      <p class="plan-desc">Everything you need to get started. No credit card. No catch.</p>
+      <ul class="plan-features">
+        <li>Up to 6 exercises per session</li>
+        <li>30 days of history</li>
+        <li>Personal records</li>
+        <li>Plate calculator</li>
+        <li>Rest timer</li>
+        <li>Bodyweight tracker (10 entries)</li>
+        <li class="locked">Progress charts</li>
+        <li class="locked">Smart weight suggestions</li>
+        <li class="locked">Streak tracker</li>
+        <li class="locked">Templates</li>
+      </ul>
+      <button class="plan-btn outline" onclick="document.getElementById('waitlist').scrollIntoView({behavior:'smooth'})">Join Waitlist</button>
+    </div>
+    <div class="plan featured">
+      <div class="plan-badge">Most Popular</div>
+      <p class="plan-name">Pro</p>
+      <div class="plan-price"><sup>&#8364;</sup>2.99<span>/mo</span></div>
+      <p class="plan-desc">Unlock everything. Cancel anytime. Or go yearly for &#8364;29.99 and save 2 months.</p>
+      <ul class="plan-features">
+        <li>Unlimited exercises per session</li>
+        <li>Full history, forever</li>
+        <li>Progress charts per exercise</li>
+        <li>Smart weight suggestions</li>
+        <li>Streak tracker</li>
+        <li>Workout templates</li>
+        <li>Unlimited bodyweight entries</li>
+        <li>Bodyweight chart</li>
+        <li>CSV export</li>
+      </ul>
+      <button class="plan-btn solid" onclick="document.getElementById('waitlist').scrollIntoView({behavior:'smooth'})">Join Waitlist — Get Pro Early</button>
+    </div>
+  </div>
+  <p class="pricing-note reveal">Built by one dev. Your support keeps Repp growing. &#129489;&#8205;&#128187;</p>
+</section>
+
+<!-- WAITLIST -->
+<section id="waitlist">
+  <div class="waitlist-glow"></div>
+  <div class="waitlist-inner">
+    <p class="section-label" style="margin-bottom:20px">Early Access</p>
+    <h2 class="waitlist-title">Be First.<br/><span>Hit Different.</span></h2>
+    <p class="waitlist-sub">Repp is launching soon on Android and iOS. Join the waitlist and be the first to know when it drops.</p>
+    <div class="waitlist-form">
+      <input class="waitlist-input" type="email" id="wl-email" placeholder="your@email.com"/>
+      <button class="waitlist-submit" onclick="handleWaitlist()">Notify Me</button>
+    </div>
+    <div id="waitlist-success">&#10003; You're on the list. We'll be in touch.</div>
+    <p class="waitlist-note">No spam. Just one email when we launch.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <p class="section-label reveal">FAQ</p>
+  <h2 class="section-title reveal" style="margin-bottom:40px">Questions.</h2>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">When is Repp launching? <span>+</span></button>
+    <div class="faq-a"><p>We're putting the finishing touches on Repp right now. Join the waitlist and you'll be the first to know the moment it's live on Android and iOS.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Is there really a free plan? <span>+</span></button>
+    <div class="faq-a"><p>Yes, completely free. You get 6 exercises per session, 30 days of history, personal records, the plate calculator, and the rest timer — no credit card required.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">What does Pro include? <span>+</span></button>
+    <div class="faq-a"><p>Pro unlocks unlimited exercises per session, your full workout history, progress charts, smart weight suggestions, streak tracking, templates, unlimited bodyweight logging, and CSV export. &#8364;2.99/mo or &#8364;29.99/yr.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Does my data stay private? <span>+</span></button>
+    <div class="faq-a"><p>Your workout data is stored locally on your device and synced to your account. We don't sell your data or show you ads.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Can I use Repp without an account? <span>+</span></button>
+    <div class="faq-a"><p>Yes. Repp has a guest mode — just tap "Continue as Guest" and start logging immediately. Your data is saved locally to your device.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Will it be available on iOS? <span>+</span></button>
+    <div class="faq-a"><p>Yes, Repp is built with Expo (React Native) so it'll be available on both Android and iOS at launch.</p></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-logo">REPP</span>
+  <span class="footer-note">&#169; 2026 Repp — Built by F4LCON</span>
+  <span class="footer-note">Track. Progress. Repeat.</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
